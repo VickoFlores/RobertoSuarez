@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="Menu.css">
 		<link rel="stylesheet" type="text/css" href="Fuentes.css">
 		<link rel="stylesheet" type="text/css" href="Carousel.css">
+		<script src="Menu.js"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
@@ -22,15 +23,20 @@
 	<div class="Contenedor">
 
 		<header>
-			<img class="Foto" src="Perfil-Recorte.jpg">
+			<img class="Foto" src="IMGS/Perfil-Recorte.jpg">
 			<h1 class="Nombre">Suarez Roberto Carlos</h1>
 			<nav id="Movil" class="Main-M-D">
 				<ul class="UL-M">
-					<a href="#Plome" class="A-M"><li class="LI-M">Plomería</li></a>
-					<a href="#Alba" class="A-M"><li class="LI-M">Albanilería</li></a>
-					<a href="#Elec" class="A-M"><li class="LI-M">Electricista</li></a>
-					<a href="Carpin" class="A-M"><li class="LI-M">Carpintería</li></a>
-					<a href="#Contac" class="A-M"><li class="LI-M">Contacto</li></a>
+					<li id="Inicio-B">Inicio<i class="fas fa-bars" onclick="MenuB();" id="Barra"></i><i class="fas fa-times" id="EquisX" onclick="MenuN();"></i>
+						<ul id="MenuDes">
+							<li class="LI-M"><a href="#Plome" class="A-M" onclick="MenuN();">Plomería</a></li>
+							<li class="LI-M"><a href="#Alba" class="A-M">Albanilería</a></li>
+							<li class="LI-M"><a href="#Elec" class="A-M">Electricista</a></li>
+							<li class="LI-M"><a href="#Carpin" class="A-M">Carpintería</a></li>
+							<li class="LI-M"><a href="#Contac" class="A-M">Contacto</a></li>
+							
+						</ul>
+					</li>
 				</ul>
 			</nav>
 		</header>
